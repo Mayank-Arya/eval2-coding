@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web-111 C1 Evaluation</title>
+
+  <style>
+    *{
+      background-color: rgb(227, 227, 228);
+    }
+    body {
+      background-color: rgb(250, 250, 250);
+    }
+
+    @media screen and (min-width:701px) and (max-width:1000px) {
+      /* Here Write all the necessery styles for Medium Screen size  */
+    }
+
+    @media screen and (min-width:100px) and (max-width:700px) {
+      /* Here Write all the necessery styles for Small Screen size  */
+    }
+
+    .top{
+      display: flex;
+      margin-top: 50px ;
+    }
+
+    .top>div{
+      width: 40%;
+      display: grid;
+      height: auto;
+      margin: auto;
+      border: 0px solid black;
+      margin-top: 140px;
+    }
+    .top>div:nth-child(2){
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,160px);
+    border: 0px solid black;
+   
+    gap: 10px 10px;
+    margin: auto;
+    
+    }
+    .top>div>div{
+      border: 0px solid black;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+    }
+    .top>div>button{
+      width: 150px;
+      background-color: green;
+      color: white;
+      border-radius: 10px;
+      border: 0px solid green;
+    }
+    .top>div>img,h2{
+      margin-left: 20px;
+    }
+
+    .mid>h1{
+    text-align: center;
+    margin-top: 80px;
+    }
+    .mid>div{
+      width: 90%;
+      height: auto;
+      display: flex;  
+      border: 0px solid black;
+      margin: auto;
+    }
+    .mid>div>div{
+      width: 30%;
+      height: 200px;
+      justify-content: space-between;
+      margin: auto;
+      margin-top: 40px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .mid>div>div>img,h3{
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+   .bottom{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border: 0px solid black;
+    margin-top: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+   }
+   .bottom>div{
+    width: 80%;
+    justify-content: space-around;
+    display: flex;
+    margin: auto
+   }
+   .bottom>div>div{
+    width: 20%;
+    height: 100px;
+    border: 0px solid blue;
+   }
+   .bottom>div>div>img{
+    width: 80%;
+    height: 50px;
+    margin: auto;
+  
+   }
+   .bottom>div>h5{
+  margin-top: 30px;
+   }
+   .bottom>button{
+    align-items: center;
+    margin-top: 40px;
+    width: 170px;
+    height: 30px;
+    background-color: rgb(72, 147, 72);
+    border-radius: 2px;
+    border: 0px;
+    color: white;
+   }
+   
+   .info{
+    width: 90%;
+    margin: auto;
+    height: auto;
+    margin-top: 70px;
+    border: 1px solid black;
+    border-radius: 3px;
+   
+
+   }
+
+   .info.img{
+    width: 50%;
+    height: auto;
+    
+   }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top">
+      <!-- This is the top part. Here should be 2 divs(flex) and inside the second div there should be 6 more divs(Grid) -->
+      <div>
+        <h1>Invest In IPOs</h1>
+        <h4>Trusted By Millions Of Indians. Start Investing Today</h4>
+        <button>Get Started</button>
+      </div>
+      <div>
+        <div>
+          <img src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfHome.af668dea.svg" alt="">
+          <h2>Mutual Fund</h2>
+        </div>
+        <div> <img src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfHome.af668dea.svg" alt="">
+          <h2>Mutual Fund</h2></div>
+        <div> <img src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfHome.af668dea.svg" alt="">
+          <h2>Mutual Fund</h2></div>
+        <div> <img src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfHome.af668dea.svg" alt="">
+          <h2>Mutual Fund</h2></div>
+        <div> <img src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfHome.af668dea.svg" alt="">
+          <h2>Mutual Fund</h2></div>
+        <div> <img src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfHome.af668dea.svg" alt="">
+          <h2>Mutual Fund</h2></div>
+      </div>
+    </div>
+    <div class="mid">
+      <!-- This is the mid part. Here you should have div where there will be 3 more divs(flex)  -->
+       <h1>Keep Learning.Keep Growing</h1>
+       <div>
+        <div>
+          <img src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/blog1.d3a78143.png" alt="">
+          <h3>How TO Select/Pick Stocks for Intraday</h3>
+        </div>
+        <div>
+          <img src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/blog2.2eea33cc.png" alt="">
+          <h3>Bigeners Guide To Mutual Funds</h3>
+        </div>
+        <div>
+          <img src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/blog3.5bbd4db3.png" alt="">
+          <h3>How To Diversify In The Time Of Market Volatility</h3>
+        </div>
+       </div>
+    </div>
+    <div class="bottom">
+      <!-- This is the bottom part. Here you should have div where there will be 6 more divs(Grid)  -->
+      <h1>Discover Mutual Funds</h1>
+        <h4>Search Mutual Funds,AMCs,etc</h4>
+      <div>
+        <div>
+          <img src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfHome.af668dea.svg" alt="">
+          <h5>High Returns</h5>
+        </div>
+        <div>
+          <img src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfHome.af668dea.svg" alt="">
+          <h5>High Returns</h5>
+        </div>
+        <div>
+          <img src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfHome.af668dea.svg" alt="">
+          <h5>High Returns</h5>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfHome.af668dea.svg" alt="">
+          <h5>High Returns</h5>
+        </div>
+        <div>
+          <img src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfHome.af668dea.svg" alt="">
+          <h5>High Returns</h5>
+        </div>
+        <div>
+          <img src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/mfHome.af668dea.svg" alt="">
+          <h5>High Returns</h5>
+        </div>
+      </div>
+      <button>Explore More Funtions</button>
+    </div>
+    
+    <div class="info">
+      <!-- Here we should have a image and a div  -->
+       <h1>We Are With You At Every Step</h1>
+    </div>
+  </div>
+</body>
+
+</html>
